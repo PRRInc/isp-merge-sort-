@@ -88,6 +88,8 @@ function mergeSortedArrays (leftArr, rightArr) { // Merge Sort helper function t
 	
 The above recurrence can be solved either using the Recurrence Tree method or the Master method. It falls in case II of the Master Method and the solution of the recurrence is θ(Nlog(N)). The time complexity of Merge Sort isθ(Nlog(N)) in all 3 cases (worst, average, and best) as merge sort always divides the array into two halves and takes linear time to merge two halves."
 
+![Big-O Complexity Chart](https://www.doabledanny.com/static/31985456f982a6965ee675e767256140/f2bf3/6.jpg)
+
 "
 T(k) = time taken to sort k elements
 M(k) = time taken to merge k elements
@@ -154,3 +156,5 @@ b. Advantages of Merge Sort: Stability: Merge sort is a stable sorting algorithm
 [Wikipedia - Divide-and-conquer algorithm](https://en.wikipedia.org/wiki/Divide-and-conquer_algorithm)
 
 [Wikipedia - an example of merge sort.](https://en.wikipedia.org/wiki/Merge_sort#/media/File:Merge-sort-example-300px.gif)
+
+[Doable Danny - Merge Sort - JavaScript - Big-O Complexity Chart](https://www.doabledanny.com/static/31985456f982a6965ee675e767256140/f2bf3/6.jpg)
