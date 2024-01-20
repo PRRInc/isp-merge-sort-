@@ -8,7 +8,9 @@ Merge Sort uses a Divide and Conquer Recursive Methodology, which breaks down a 
 
 Merge Sort works by dividing an array into smaller subarrays (two halves) until it cannot be further divided, i.e. each subarray has only one element left (an array with one element is always sorted). The process involves sorting each subarray and then merging the sorted subarrays back together to form the final sorted array using a merge helper function. This process is repeated until the entire array is sorted.
 
-Attributes:
+![Let's take a look at how Merge Sort works on an array such as [4, 8, 7, 2, 11, 1, 3]:](https://stackabuse.s3.amazonaws.com/media/merge-sort-in-python-1.png)
+
+### Attributes:
 
 Out-of-place - Requires extra data structures, which is "opposite to in-place sorting algorithms, where the input is simply overwritten"
 
