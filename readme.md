@@ -147,6 +147,8 @@ So in the best case, the worst case and the average case the time complexity is 
 
 4. Inversion Count Problem - "Inversion Count for an array indicates – how far (or close) the array is from being sorted. If the array is already sorted, then the inversion count is 0, but if the array is sorted in reverse order, the inversion count is the maximum.   Given an array arr[]. The task is to find the inversion count of arr[]. Where two elements arr[i] and arr[j] form an inversion if a[i] > a[j] and i < j."
 
+5. Linked Lists - Divide and Conquer methodology allows Merge Sort to be more efficient at sorting Linked Lists because it doesn't require random access to elements.
+
 b. Advantages of Merge Sort: 
 
 1. Stability: Merge sort is a stable sorting algorithm, which means it maintains the relative order of equal elements in the input array. 
@@ -159,11 +161,19 @@ b. Advantages of Merge Sort:
 
 "Drawbacks of Merge Sort: 
 
-1. Space complexity: Merge sort requires additional memory to store the merged sub-arrays during the sorting process.
+1. Space complexity: Merge sort requires additional memory to store the merged sub-arrays during the sorting process. Descending Order Arrays.
 
-2. Not in-place: Merge sort is not an in-place sorting algorithm, which means it requires additional memory to store the sorted data. This can be a disadvantage in applications where memory usage is a concern. 
+2. Not in-place: Merge sort is not an in-place sorting algorithm, which means it requires additional memory to store the sorted data. This can be a disadvantage in applications where memory usage is a concern. Already Sorted Arrays.
 
-3. Not always optimal for small datasets: For small datasets, Merge sort has a higher time complexity than some other sorting algorithms, such as insertion sort. This can result in slower performance for very small datasets.""
+3. Not always optimal for small datasets: For small datasets, Merge sort has a higher time complexity than some other sorting algorithms, such as insertion sort. This can result in slower performance for very small datasets, such as empty arrays, arrays with a single element.""
+
+4. Duplicate elements
+
+5. Odd-length arrays
+
+6. Array with Null or Undefined Values.
+
+7. Array of Objects.
 
 ## Citations
 
@@ -196,3 +206,5 @@ b. Advantages of Merge Sort:
 [Wikipedia - an example of merge sort.](https://en.wikipedia.org/wiki/Merge_sort#/media/File:Merge-sort-example-300px.gif)
 
 [Doable Danny - Merge Sort - JavaScript - Big-O Complexity Chart](https://www.doabledanny.com/static/31985456f982a6965ee675e767256140/f2bf3/6.jpg)
+
+[OpenAI ChatGPT 3.5 - use cases of merge sort in javascript and edge cases](https://chat.openai.com/share/4aec598d-3fac-4691-9031-e4a523433e24)
