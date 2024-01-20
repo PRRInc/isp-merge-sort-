@@ -171,9 +171,9 @@ b. Advantages of Merge Sort:
 
 5. Odd-length arrays
 
-6. Array with Null or Undefined Values.
+6. Array with Null or Undefined Values
 
-7. Array of Objects.
+7. Array of Objects
 
 ## Citations
 
