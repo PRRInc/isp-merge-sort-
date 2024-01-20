@@ -137,15 +137,33 @@ So in the best case, the worst case and the average case the time complexity is 
 
 ## Use Cases
 
-"a. Applications of Merge Sort: Sorting large datasets: Merge sort is particularly well-suited for sorting large datasets due to its guaranteed worst-case time complexity of O(n log n). External sorting: Merge sort is commonly used in external sorting, where the data to be sorted is too large to fit into memory. Custom sorting: Merge sort can be adapted to handle different input distributions, such as partially sorted, nearly sorted, or completely unsorted data. Inversion Count Problem
+"a. Applications of Merge Sort: 
 
-b. Advantages of Merge Sort: Stability: Merge sort is a stable sorting algorithm, which means it maintains the relative order of equal elements in the input array. Guaranteed worst-case performance: Merge sort has a worst-case time complexity of O(N logN), which means it performs well even on large datasets. Parallelizable: Merge sort is a naturally parallelizable algorithm, which means it can be easily parallelized to take advantage of multiple processors or threads."
+1. Sorting large datasets: Merge sort is particularly well-suited for sorting large datasets due to its guaranteed worst-case time complexity of O(n log n). 
 
-"Inversion Count for an array indicates – how far (or close) the array is from being sorted. If the array is already sorted, then the inversion count is 0, but if the array is sorted in reverse order, the inversion count is the maximum.   Given an array arr[]. The task is to find the inversion count of arr[]. Where two elements arr[i] and arr[j] form an inversion if a[i] > a[j] and i < j."
+2. External sorting: Merge sort is commonly used in external sorting, where the data to be sorted is too large to fit into memory.
+
+3. Custom sorting: Merge sort can be adapted to handle different input distributions, such as partially sorted, nearly sorted, or completely unsorted data. 
+
+4. Inversion Count Problem - "Inversion Count for an array indicates – how far (or close) the array is from being sorted. If the array is already sorted, then the inversion count is 0, but if the array is sorted in reverse order, the inversion count is the maximum.   Given an array arr[]. The task is to find the inversion count of arr[]. Where two elements arr[i] and arr[j] form an inversion if a[i] > a[j] and i < j."
+
+b. Advantages of Merge Sort: 
+
+1. Stability: Merge sort is a stable sorting algorithm, which means it maintains the relative order of equal elements in the input array. 
+
+2. Guaranteed worst-case performance: Merge sort has a worst-case time complexity of O(N logN), which means it performs well even on large datasets. 
+
+3. Parallelizable: Merge sort is a naturally parallelizable algorithm, which means it can be easily parallelized to take advantage of multiple processors or threads."
 
 ## Edge Cases and Concerns
 
-"Drawbacks of Merge Sort: Space complexity: Merge sort requires additional memory to store the merged sub-arrays during the sorting process.  Not in-place: Merge sort is not an in-place sorting algorithm, which means it requires additional memory to store the sorted data. This can be a disadvantage in applications where memory usage is a concern. Not always optimal for small datasets: For small datasets, Merge sort has a higher time complexity than some other sorting algorithms, such as insertion sort. This can result in slower performance for very small datasets.""
+"Drawbacks of Merge Sort: 
+
+1. Space complexity: Merge sort requires additional memory to store the merged sub-arrays during the sorting process.
+
+2. Not in-place: Merge sort is not an in-place sorting algorithm, which means it requires additional memory to store the sorted data. This can be a disadvantage in applications where memory usage is a concern. 
+
+3. Not always optimal for small datasets: For small datasets, Merge sort has a higher time complexity than some other sorting algorithms, such as insertion sort. This can result in slower performance for very small datasets.""
 
 ## Citations
 
