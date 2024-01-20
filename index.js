@@ -5,7 +5,7 @@ function mergeSortedArrays (leftArr, rightArr) {
       if (leftArr[0] < rightArr[0]) {
         sortedArr.push(leftArr.shift());
       } else {
-        sortedArr.push(righArr.shift());
+        sortedArr.push(rightArr.shift());
       }
     }
     return [...sortedArr, ...leftArr, ...rightArr];
