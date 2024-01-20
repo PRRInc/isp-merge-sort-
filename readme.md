@@ -84,11 +84,31 @@ function mergeSortedArrays (leftArr, rightArr) { // Merge Sort helper function t
 
 ### Time Complexity
 
-"Complexity Analysis of Merge Sort Time Complexity: O(N log(N)),  Merge Sort is a recursive algorithm and time complexity can be expressed as following recurrence relation. T(n) = 2T(n/2) + θ(n)
+Merge Sort Time Complexity is O(N*log(N)),  Merge Sort is a recursive algorithm and time complexity can be expressed as following recurrence relation: T(n) = 2T(n/2) + θ(n)
 	
-The above recurrence can be solved either using the Recurrence Tree method or the Master method. It falls in case II of the Master Method and the solution of the recurrence is θ(Nlog(N)). The time complexity of Merge Sort isθ(Nlog(N)) in all 3 cases (worst, average, and best) as merge sort always divides the array into two halves and takes linear time to merge two halves."
+Merge sort always divides the array into two halves and takes linear time to merge two halves.
+
+Merge Sort doesn’t care whether the data is almost sorted or not. It will split the array up and merge them back together no matter if the input array is already sorted (best), “random” (average), or in-reverse (worst). For a given length input, the number of operations will always be the same – no matter what order it’s in.
 
 ![Big-O Complexity Chart](https://www.doabledanny.com/static/31985456f982a6965ee675e767256140/f2bf3/6.jpg)
+
+Best-case, Average-case, and Worst-case Time Complexity of Merge Sort is O(nlog(n))
+
+"O(n log(n)) is a combination of linear time, O(n), and logarithmic time, O(log(n)). O(n log(n)) is known as linearithmic time.
+
+But where does this log(n) come from? If the length of the input array is 8, then the array will be divided in half three times:
+
+8 => 4 4 => 2 2 2 2 => 1 1 1 1 1 1 1 1
+
+Each arrow represents a division by 2. We start with one array of 8 items, then two arrays of 4 items, then four arrays of 2 items, and finally eight arrays of 1 item.
+
+This is logarithmic time. Every time we double the size of the input, the number of operations (divisions) increases by just 1.
+
+Now I’ve explained where the log(n) comes from, what about the n? The n comes from the merge helper function. It has to make roughly eight comparisons for an array of 8 items; hence linear time.
+
+So, in total, the worst-case time complexity of Merge Sort is O(n log(n)). The best worst-case we can get from a sorting algorithm.
+
+Merge Sort is one of the most efficient sorting algorithms for sorting large arrays."
 
 "
 T(k) = time taken to sort k elements
