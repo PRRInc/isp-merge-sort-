@@ -88,7 +88,7 @@ function mergeSortedArrays (leftArr, rightArr) { // Merge Sort helper function t
 	
 The above recurrence can be solved either using the Recurrence Tree method or the Master method. It falls in case II of the Master Method and the solution of the recurrence is θ(Nlog(N)). The time complexity of Merge Sort isθ(Nlog(N)) in all 3 cases (worst, average, and best) as merge sort always divides the array into two halves and takes linear time to merge two halves."
 
-
+"
 T(k) = time taken to sort k elements
 M(k) = time taken to merge k elements
 
@@ -107,7 +107,7 @@ T(N) = N * T(1) + N * log2N * constant
 
 Therefore the time complexity is O(N * log2N).
 
-So in the best case, the worst case and the average case the time complexity is the same.
+So in the best case, the worst case and the average case the time complexity is the same."
 
 ### Space Complexity
 
