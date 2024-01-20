@@ -6,7 +6,7 @@ Merge Sort is an Intermediate Sorting Algorithm invented by John von Neumann in 
 
 Merge Sort uses a Divide and Conquer Recursive Methodology, which breaks down a problem into two or more sub-problems of the same or related type until these become simple enough to be solved directly. The solutions to the sub-problems are then combined to give a solution to the original problem.
 
-Merge sort works by dividing an array into smaller subarrays (two halves) until it cannot be further divided, i.e. each subarray has only one element left (an array with one element is always sorted). The process involves sorting each subarray and then merging the sorted subarrays back together to form the final sorted array using a merge helper function. This process is repeated until the entire array is sorted.
+Merge Sort works by dividing an array into smaller subarrays (two halves) until it cannot be further divided, i.e. each subarray has only one element left (an array with one element is always sorted). The process involves sorting each subarray and then merging the sorted subarrays back together to form the final sorted array using a merge helper function. This process is repeated until the entire array is sorted.
 
 Attributes:
 
@@ -15,6 +15,8 @@ Out-of-place - Requires extra data structures, which is "opposite to in-place so
 Stable - Elements that are equal will stay in the same order in the sorted output array as they were in the unsorted input array.
 
 Comparison-type - Only uses a single abstract comparison operation, such as "less-than" or "equal-to" to decide what element out of two will come first in the final sorted output array.
+
+Uses a Binary Heap---a complete Binary Tree which is used to store data efficiently to get the max or min element based on its structure.
 
 Subarrays of 0 or 1 item are always sorted.
 
@@ -119,6 +121,7 @@ So in the best case, the worst case and the average case the time complexity is 
 
 b. Advantages of Merge Sort: Stability: Merge sort is a stable sorting algorithm, which means it maintains the relative order of equal elements in the input array. Guaranteed worst-case performance: Merge sort has a worst-case time complexity of O(N logN), which means it performs well even on large datasets. Parallelizable: Merge sort is a naturally parallelizable algorithm, which means it can be easily parallelized to take advantage of multiple processors or threads."
 
+"Inversion Count for an array indicates – how far (or close) the array is from being sorted. If the array is already sorted, then the inversion count is 0, but if the array is sorted in reverse order, the inversion count is the maximum.   Given an array arr[]. The task is to find the inversion count of arr[]. Where two elements arr[i] and arr[j] form an inversion if a[i] > a[j] and i < j."
 
 ## Edge Cases and Concerns
 
