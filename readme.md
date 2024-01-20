@@ -2,17 +2,13 @@
 
 ## Introduction
 
-Merge sort is a Intermediate Sorting Algorithm invented by John von Neumann in 1945. "He was a Hungarian-American mathematician, physicist, computer scientist, engineer and polymath, who worked on the Manhattan Project and developed the mathematical models behind the explosive lenses used in the implosion-type nuclear weapons. He was a pioneer in building the mathematical framework of quantum physics, in the development of functional analysis, and in game theory, introducing or codifying concepts including cellular automata, the universal constructor and the digital computer."
+Merge Sort is an Intermediate Sorting Algorithm invented by John von Neumann in 1945, a Hungarian-American mathematician, physicist, and computer scientist, who worked on the Manhattan Project and was a pioneer in building the mathematical framework of quantum physics, functional analysis, game theory, the universal constructor, and the digital computer."
 
-It uses a Divide and Conquer Recursive Methodology. 
+Merge Sort uses a Divide and Conquer Recursive Methodology, which breaks down a problem into two or more sub-problems of the same or related type until these become simple enough to be solved directly. The solutions to the sub-problems are then combined to give a solution to the original problem.
 
-"A divide-and-conquer algorithm recursively breaks down a problem into two or more sub-problems of the same or related type, until these become simple enough to be solved directly. The solutions to the sub-problems are then combined to give a solution to the original problem." - Wikipedia
+Merge sort works by dividing an array into smaller subarrays (two halves) until it cannot be further divided i.e., each subarray has only one element left (an array with one element is always sorted). The process involves sorting each subarray and then merging the sorted subarrays back together to form the final sorted array using a merge helper function. This process is repeated until the entire array is sorted.
 
-"Merge sort is defined as a sorting algorithm that works by dividing an array into smaller subarrays, sorting each subarray, and then merging the sorted subarrays back together to form the final sorted array."
-
-"In simple terms, we can say that the process of merge sort is to divide the array into two halves, sort each half, and then merge the sorted halves back together. This process is repeated until the entire array is sorted."
-
-"Merge sort is a recursive algorithm that continuously splits the array in half until it cannot be further divided i.e., the array has only one element left (an array with one element is always sorted). Then the sorted subarrays are merged into one sorted array."
+Attributes:
 
 Out-of-place - Requires extra data structures, which is "opposite to in-place sorting algorithms, where the input is simply overwritten"
 
@@ -20,7 +16,10 @@ Stable - Elements that are equal will stay in the same order in the sorted outpu
 
 Comparison-type - Only uses a single abstract comparison operation, such as "less-than" or "equal-to" to decide what element out of two will come first in the final sorted output array.
 
-"Arrays of 0 or 1 item are always sorted"
+Subarrays of 0 or 1 item are always sorted.
+
+Contains a Recursive algorithm that continuously splits the array in half by having the mergeSort function call itself until subarrays with only 1 index each are reached. A recursive function calls itself until a base conditin is reach (in this case reaching subarrays with only 1 element in each---considered sorted by default), which allows it to exit out of the recursive function call loop.
+
 
 
 ## Algorithm Description
