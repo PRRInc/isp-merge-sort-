@@ -112,6 +112,8 @@ So, in total, the worst-case time complexity of Merge Sort is O(n log(n)). The b
 
 Merge Sort is one of the most efficient sorting algorithms for sorting large arrays."
 
+![Performance summary table](https://www.doabledanny.com/static/07bb2f1355bef36bef1c768a471a6e84/43ad0/7.jpg)
+
 "
 T(k) = time taken to sort k elements
 
