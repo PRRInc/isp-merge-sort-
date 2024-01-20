@@ -65,9 +65,9 @@ function mergeSortedArrays (leftArr, rightArr) { // Merge Sort helper function t
     
     while (leftArr.length && rightArr.length) { // Insert the smallest item into sortedArr by checking if there is anything in the leftArr and rightArr.
       if (leftArr[0] < rightArr[0]) { // Finds which initial index in each array is smaller.
-        sortedArr.push(leftArr.shift()); //Push leftArr index 0 value into sortedArr if it is smaller.
+        sortedArr.push(leftArr.shift()); //Push leftArr index 0 value into sortedArr if it is smaller using shift.
       } else {
-        sortedArr.push(rightArr.shift()); //Push rightArr index 0 value into sortedArr if it is smaller.
+        sortedArr.push(rightArr.shift()); //Push rightArr index 0 value into sortedArr if it is smaller using shift.
       }
     }
     // Use spread operators to create a new array, combining the three arrays. Will be in order once mergeSortedArrays helper function completes.
