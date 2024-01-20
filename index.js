@@ -31,6 +31,7 @@ console.log(mergeSort([5, 4, 3, 2, 1])); // an array of descending order element
 console.log(mergeSort([8, 23, 9, 4, 12, -8, 4, 67, 342, -1000])); // An array of unsorted positive and negative elements
 console.log(mergeSort([])); // an empty array
 console.log(mergeSort([1])); // an array of one element
+console.log(mergeSort(["blueberry", "apple", "banana", "melon", "grape", "lime", "lemon", "watermelon"])) // an array of stringsg
 console.log(
     mergeSort([
     1547, 1386, 1902, 1674, 839, 1203, 1987, 1152, 1761, 477, 1248, 1045, 651,
