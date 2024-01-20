@@ -76,9 +76,7 @@ function mergeSortedArrays (leftArr, rightArr) { // Merge Sort helper function t
 ```
 
 
-4. Repeat: Repeat steps 1-3 until the entire list is sorted and return the input array that was sorted in-place
-
-"Repeat step 3 until you end up with a single sorted array."
+4. Repeat: "Repeat step 3 until you end up with a single sorted array."
 
 ![Merge Sort Animation](https://upload.wikimedia.org/wikipedia/commons/c/cc/Merge-sort-example-300px.gif)
 
