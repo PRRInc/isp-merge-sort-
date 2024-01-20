@@ -1,29 +1,30 @@
-function mergeSortedArrays (leftArr, rightArr) {
-    let sortedArr = [];
+function mergeSortedArrays (leftArr, rightArr) { // Merge Sort helper function that allows Merge Sort to sort already sorted arrays with each other.
+    let sortedArr = []; // the sorted items will go here
     
-    while (leftArr.length && rightArr.length) {
-      if (leftArr[0] < rightArr[0]) {
-        sortedArr.push(leftArr.shift());
+    while (leftArr.length && rightArr.length) { // Insert the smallest item into sortedArr by checking if there is anything in the leftArr and rightArr.
+      if (leftArr[0] < rightArr[0]) { // Finds which initial index in each array is smaller.
+        sortedArr.push(leftArr.shift()); //Push leftArr index 0 value into sortedArr if it is smaller.
       } else {
-        sortedArr.push(rightArr.shift());
+        sortedArr.push(rightArr.shift()); //Push rightArr index 0 value into sortedArr if it is smaller.
       }
     }
+    // Use spread operators to create a new array, combining the three arrays. Will be in order once mergeSortedArrays helper function completes.
     return [...sortedArr, ...leftArr, ...rightArr];
   }
 
   function mergeSort(arr) {
-    // Base Condition - the condition used to stop the function from calling itself. Stops recursion.
+    // Base Condition - the condition used to stop the function from calling itself. Stops recursion because an array of 1 or 0 is considered sorted by default.
     if (arr.length <= 1) {
         return arr;
     }
 
-    let middleIndex = Math.floor(arr.length / 2);
+    let middleIndex = Math.floor(arr.length / 2); // Allows Merge Sort to break the array in half---into the leftArr and rightArr respectively.
 
     // Recursive calls - used by mergeSort to call itself as a function within itself.
-    let leftArr = mergeSort(arr.slice(0, middleIndex));
-    let rightArr = mergeSort(arr.slice(middleIndex));
+    let leftArr = mergeSort(arr.slice(0, middleIndex)); // Continues to slice the array in half into multiple smaller arrays. This breaks it up on the left side.
+    let rightArr = mergeSort(arr.slice(middleIndex)); // Continues to slice the array in half into multiple smaller arrays. This breaks it up on the right side.
 
-    return mergeSortedArrays(leftArr, rightArr);
+    return mergeSortedArrays(leftArr, rightArr); // Calls the helper function mergeSortedArrays in order to build the single index arrays back into 1 sorted array.
 
   }
 
