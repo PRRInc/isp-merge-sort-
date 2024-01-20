@@ -114,20 +114,18 @@ Merge Sort is one of the most efficient sorting algorithms for sorting large arr
 
 "
 T(k) = time taken to sort k elements
+
 M(k) = time taken to merge k elements
 
-T(N) = 2 * T(N/2) + M(N)
-= 2 * T(N/2) + constant * N
+T(N) = 2 * T(N/2) + M(N) = 2 * T(N/2) + constant * N
 
 These N/2 elements are further divided into two halves. So,
-T(N) = 2 * [2 * T(N/4) + constant * N/2] + constant * N
-= 4 * T(N/4) + 2 * N * constant
-. . .
-= 2k * T(N/2k) + k * N * constant
+T(N) = 2 * [2 * T(N/4) + constant * N/2] + constant * N = 4 * T(N/4) + 2 * N * constant
+. . . = 2k * T(N/2k) + k * N * constant
 
-It can be divided maximum until there is one element left. So, then N/2k = 1. k = log2N
-T(N) = N * T(1) + N * log2N * constant
-= N + N * log2N
+It can be divided maximum until there is one element left. 
+So, then N/2k = 1. k = log2N
+T(N) = N * T(1) + N * log2N * constant = N + N * log2N
 
 Therefore the time complexity is O(N * log2N).
 
