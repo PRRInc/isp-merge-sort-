@@ -23,7 +23,7 @@ function mergeSortedArrays (leftArr, rightArr) {
     let leftArr = mergeSort(arr.slice(0, middleIndex));
     let rightArr = mergeSort(arr.slice(middleIndex));
 
-    return merge(leftArr, rightArr);
+    return mergeSortedArrays(leftArr, rightArr);
 
   }
 
