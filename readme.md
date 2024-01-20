@@ -20,7 +20,7 @@ Uses a Binary Heap---a complete Binary Tree which is used to store data efficien
 
 Subarrays of 0 or 1 item are always sorted.
 
-Contains a Recursive algorithm that continuously splits the array in half by having the mergeSort function call itself until subarrays with only 1 index each are reached. A recursive function calls itself until a base conditin is reach (in this case reaching subarrays with only 1 element in each---considered sorted by default), which allows it to exit out of the recursive function call loop.
+Contains a Recursive algorithm that continuously splits the array in half by having the mergeSort function call itself until subarrays with only 1 index each are reached. A recursive function calls itself until a base conditin is reached (in this case reaching subarrays with only 1 element in each---considered sorted by default), which allows it to exit out of the recursive function call loop.
 
 
 ## Algorithm Description
