@@ -78,7 +78,7 @@ function mergeSortedArrays (leftArr, rightArr) { // Merge Sort helper function t
 
 "Repeat step 3 until you end up with a single sorted array."
 
-![Merge Sort Animation](https://en.wikipedia.org/wiki/Merge_sort#/media/File:Merge-sort-example-300px.gif)
+![Merge Sort Animation](https://upload.wikimedia.org/wikipedia/commons/c/cc/Merge-sort-example-300px.gif)
 
 ## Big O Evaluation
 
