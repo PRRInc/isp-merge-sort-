@@ -2,11 +2,11 @@
 
 ## Introduction
 
-Merge Sort is an Intermediate Sorting Algorithm invented by John von Neumann in 1945, a Hungarian-American mathematician, physicist, and computer scientist, who worked on the Manhattan Project and was a pioneer in building the mathematical framework of quantum physics, functional analysis, game theory, the universal constructor, and the digital computer."
+Merge Sort is an Intermediate Sorting Algorithm invented by John von Neumann in 1945, a Hungarian-American mathematician, physicist, and computer scientist, who worked on the Manhattan Project and was a pioneer in building the mathematical framework of quantum physics, functional analysis, game theory, the universal constructor, and the digital computer.
 
 Merge Sort uses a Divide and Conquer Recursive Methodology, which breaks down a problem into two or more sub-problems of the same or related type until these become simple enough to be solved directly. The solutions to the sub-problems are then combined to give a solution to the original problem.
 
-Merge sort works by dividing an array into smaller subarrays (two halves) until it cannot be further divided i.e., each subarray has only one element left (an array with one element is always sorted). The process involves sorting each subarray and then merging the sorted subarrays back together to form the final sorted array using a merge helper function. This process is repeated until the entire array is sorted.
+Merge sort works by dividing an array into smaller subarrays (two halves) until it cannot be further divided, i.e. each subarray has only one element left (an array with one element is always sorted). The process involves sorting each subarray and then merging the sorted subarrays back together to form the final sorted array using a merge helper function. This process is repeated until the entire array is sorted.
 
 Attributes:
 
@@ -19,7 +19,6 @@ Comparison-type - Only uses a single abstract comparison operation, such as "les
 Subarrays of 0 or 1 item are always sorted.
 
 Contains a Recursive algorithm that continuously splits the array in half by having the mergeSort function call itself until subarrays with only 1 index each are reached. A recursive function calls itself until a base conditin is reach (in this case reaching subarrays with only 1 element in each---considered sorted by default), which allows it to exit out of the recursive function call loop.
-
 
 
 ## Algorithm Description
