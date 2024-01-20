@@ -131,7 +131,7 @@ T(N) = N * T(1) + N * log2N * constant = N + N * log2N
 
 Therefore the time complexity is O(N * log2N).
 
-So in the best case, the worst case and the average case the time complexity is the same."
+So in the best case, the worst case, and the average case, the time complexity is the same."
 
 ### Space Complexity
 
